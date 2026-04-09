@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Emergency plumber Winnipeg — Aloha Plumbing responds fast. Call (204) 890-7725 now. 4.9 stars, same-day service, camera inspection included.">
+<title>Plumber Winnipeg — Call Now (204) 890-7725 | Aloha Plumbing</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--red:#D93025;--red-dark:#B71C1C;--navy:#0D1B2A;--gold:#F5A623;--white:#FFFFFF;--off-white:#F8F6F2;--gray-600:#757575;--font-display:'Bebas Neue',sans-serif;--font-body:'DM Sans',sans-serif;--radius:6px;--radius-lg:14px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);color:var(--navy);background:var(--white);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+
+/* STICKY HEADER */
+.lp-header{position:sticky;top:0;z-index:999;background:var(--red);padding:16px 20px;text-align:center;box-shadow:0 4px 20px rgba(217,48,37,.4)}
+.lp-phone{font-family:var(--font-display);font-size:clamp(24px,5vw,40px);color:#fff;letter-spacing:2px;display:flex;align-items:center;justify-content:center;gap:12px}
+.lp-header-sub{font-size:13px;color:rgba(255,255,255,.8);margin-top:4px}
+
+/* HERO */
+.lp-hero{background:var(--navy);color:#fff;padding:60px 20px;text-align:center;position:relative;overflow:hidden}
+.lp-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(180deg,#0D1B2A 0%,#1B2D3F 100%)}
+.lp-hero-inner{position:relative;z-index:2;max-width:700px;margin:0 auto}
+.lp-urgency-tag{display:inline-block;background:rgba(217,48,37,.2);border:1px solid rgba(217,48,37,.4);color:#FF8A80;font-size:13px;font-weight:500;padding:6px 16px;border-radius:20px;margin-bottom:20px;letter-spacing:.3px}
+.lp-hero h1{font-family:var(--font-display);font-size:clamp(42px,8vw,76px);letter-spacing:1px;line-height:1;margin-bottom:14px}
+.lp-hero h1 span{color:var(--red)}
+.lp-hero p{font-size:17px;color:rgba(255,255,255,.75);margin-bottom:32px;max-width:500px;margin-left:auto;margin-right:auto;line-height:1.6;font-weight:300}
+.lp-call-btn{display:inline-flex;align-items:center;justify-content:center;gap:14px;background:var(--red);color:#fff;padding:22px 48px;border-radius:var(--radius-lg);font-family:var(--font-display);font-size:clamp(24px,4vw,36px);letter-spacing:2px;transition:all .2s;box-shadow:0 8px 32px rgba(217,48,37,.5);border:3px solid rgba(255,255,255,.2);width:100%;max-width:500px}
+.lp-call-btn:hover,.lp-call-btn:active{background:var(--red-dark);transform:scale(1.02);box-shadow:0 12px 40px rgba(217,48,37,.6)}
+.lp-or{font-size:13px;color:rgba(255,255,255,.4);margin:16px 0}
+.lp-text-btn{display:inline-block;color:rgba(255,255,255,.6);font-size:14px;border-bottom:1px solid rgba(255,255,255,.2);padding-bottom:2px}
+
+/* SOCIAL PROOF STRIP */
+.proof-strip{background:var(--gold);padding:18px 20px}
+.proof-inner{max-width:800px;margin:0 auto;display:flex;justify-content:space-around;align-items:center;gap:16px;flex-wrap:wrap}
+.proof-item{text-align:center}
+.proof-num{font-family:var(--font-display);font-size:28px;color:var(--navy);letter-spacing:.5px;display:block}
+.proof-label{font-size:12px;color:rgba(13,27,42,.65);font-weight:500}
+
+/* TRUST SECTION */
+.trust-section{padding:50px 20px;background:var(--off-white)}
+.trust-inner{max-width:700px;margin:0 auto}
+.trust-section h2{font-family:var(--font-display);font-size:clamp(28px,5vw,44px);letter-spacing:1px;color:var(--navy);text-align:center;margin-bottom:32px}
+.trust-list{display:flex;flex-direction:column;gap:12px}
+.trust-item{background:var(--white);border:1px solid #E0E0E0;border-radius:var(--radius);padding:16px 20px;display:flex;align-items:flex-start;gap:14px}
+.trust-item .ic{font-size:22px;flex-shrink:0}
+.trust-item h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.trust-item p{font-size:13px;color:var(--gray-600);line-height:1.5}
+
+/* REVIEWS */
+.reviews-section{padding:50px 20px;background:var(--white)}
+.reviews-inner{max-width:700px;margin:0 auto}
+.reviews-section h2{font-family:var(--font-display);font-size:clamp(26px,4vw,38px);letter-spacing:1px;color:var(--navy);text-align:center;margin-bottom:8px}
+.reviews-sub{text-align:center;color:var(--gold);font-size:20px;letter-spacing:3px;margin-bottom:28px}
+.review-card{background:var(--off-white);border:1px solid #E0E0E0;border-radius:var(--radius-lg);padding:20px;margin-bottom:14px}
+.review-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:8px}
+.review-text{font-size:14px;color:#424242;line-height:1.65;margin-bottom:12px;font-style:italic}
+.review-author{font-size:13px;font-weight:600;color:var(--navy)}
+.review-badge{display:inline-block;background:#E8F5E9;color:#2E7D32;font-size:11px;font-weight:600;padding:3px 10px;border-radius:20px;margin-bottom:8px}
+
+/* MIDDLE CTA */
+.mid-cta{background:var(--navy);padding:50px 20px;text-align:center}
+.mid-cta h2{font-family:var(--font-display);font-size:clamp(28px,5vw,48px);letter-spacing:1px;color:#fff;margin-bottom:12px}
+.mid-cta p{font-size:15px;color:rgba(255,255,255,.65);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto}
+
+/* ABOUT SECTION */
+.about-strip{padding:50px 20px;background:var(--off-white)}
+.about-inner{max-width:700px;margin:0 auto}
+.about-strip h2{font-family:var(--font-display);font-size:clamp(26px,4vw,38px);letter-spacing:1px;color:var(--navy);margin-bottom:20px}
+.about-strip p{font-size:15px;color:var(--gray-600);line-height:1.7;margin-bottom:14px}
+.cert-highlight{background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px;display:flex;align-items:center;gap:16px;margin:20px 0}
+.cert-icon{font-size:36px;flex-shrink:0}
+.cert-text h4{font-size:15px;font-weight:600;color:var(--gold);margin-bottom:4px}
+.cert-text p{font-size:13px;color:rgba(255,255,255,.7);margin:0}
+
+/* FINAL CTA */
+.final-cta{background:var(--red);padding:60px 20px;text-align:center}
+.final-cta h2{font-family:var(--font-display);font-size:clamp(32px,6vw,60px);letter-spacing:1px;color:#fff;margin-bottom:12px}
+.final-cta p{font-size:16px;color:rgba(255,255,255,.8);margin-bottom:28px}
+.final-phone{font-family:var(--font-display);font-size:clamp(28px,6vw,52px);color:#fff;letter-spacing:3px;display:block;margin-top:20px}
+
+/* FOOTER */
+.lp-footer{background:var(--navy);color:#fff;padding:24px 20px;text-align:center}
+.lp-footer p{font-size:13px;color:rgba(255,255,255,.4);line-height:1.6}
+.lp-footer a{color:rgba(255,255,255,.4)}
+</style>
+</head>
+<body>
+
+<!-- STICKY CALL HEADER — ALWAYS VISIBLE -->
+<div class="lp-header">
+  <a href="tel:+12048907725" class="lp-phone">
+    <span>📞</span> (204) 890-7725
+  </a>
+  <div class="lp-header-sub">Tap to call · Same-day service · Winnipeg's most trusted plumber</div>
+</div>
+
+<!-- HERO -->
+<div class="lp-hero">
+  <div class="lp-hero-inner">
+    <div class="lp-urgency-tag">🚨 Responding to Winnipeg emergencies now</div>
+    <h1>PLUMBER IN<br><span>WINNIPEG</span><br>— CALL NOW</h1>
+    <p>Drain blocked? Sewer backup? Pipe burst? We arrive fast, diagnose with live camera, and fix it right. 4.9 stars from 92 Winnipeg homeowners.</p>
+    <a href="tel:+12048907725" class="lp-call-btn">
+      📞 (204) 890-7725
+    </a>
+    <div class="lp-or">— or —</div>
+    <a href="sms:+12048907725" class="lp-text-btn">💬 Send us a text</a>
+  </div>
+</div>
+
+<!-- SOCIAL PROOF -->
+<div class="proof-strip">
+  <div class="proof-inner">
+    <div class="proof-item"><span class="proof-num">4.9★</span><span class="proof-label">Google Rating</span></div>
+    <div class="proof-item"><span class="proof-num">92</span><span class="proof-label">5-Star Reviews</span></div>
+    <div class="proof-item"><span class="proof-num">1–2hr</span><span class="proof-label">Response Time</span></div>
+    <div class="proof-item"><span class="proof-num">$0</span><span class="proof-label">Camera Inspection</span></div>
+  </div>
+</div>
+
+<!-- WHY ALOHA -->
+<div class="trust-section">
+  <div class="trust-inner">
+    <h2>WHY WINNIPEG CALLS ALOHA FIRST</h2>
+    <div class="trust-list">
+      <div class="trust-item">
+        <span class="ic">⚡</span>
+        <div><h4>Same-Day Service — Often Within 1–2 Hours</h4><p>We dispatch fast. Our technicians call ahead and arrive when promised. No 4-hour windows, no guesswork.</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">🎥</span>
+        <div><h4>Free Live Camera Inspection</h4><p>We insert a CCTV camera so you see exactly what's wrong — on screen, in real time. No guessing, no upselling what you don't need.</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">🏆</span>
+        <div><h4>Canada's Only Double Master Certified Pipe Reliner</h4><p>When it comes to sewer repair, no company in Canada has a higher level of training and certification than Aloha Plumbing.</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">💰</span>
+        <div><h4>Flat-Rate Pricing — You See It Before We Start</h4><p>What we quote is what you pay. Multiple customers confirm this in their reviews — no hidden charges, no emergency markups.</p></div>
+      </div>
+      <div class="trust-item">
+        <span class="ic">🔧</span>
+        <div><h4>We Fix What Others Can't</h4><p>Dozens of customers came to us after other companies gave up or wanted to excavate. We find solutions that save you thousands.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- REVIEWS -->
+<div class="reviews-section">
+  <div class="reviews-inner">
+    <h2>WHAT WINNIPEG SAYS</h2>
+    <div class="reviews-sub">★★★★★</div>
+
+    <div class="review-card">
+      <div class="review-badge">💰 Saved $2,000+</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I paid $500 for Mr. Rooter to come out and attempt to fix a clogged drain. They said we'd need to dig — quote over $2,000. Called Aloha and they fixed it for $180 in a half hour with no digging. I would avoid Mr. Rooter and call people who actually care about the customer."</p>
+      <div class="review-author">Jordan V. — Winnipeg</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-badge">⚡ Fixed in 1 Hour</div>
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Called and had two guys out same day — actually within an hour and a half. Personable, clean, efficient. Two of the nicest guys — they cleared the clog, fixed a minor leak, and explained everything as they went. I recommend them strongly."</p>
+      <div class="review-author">Kevin Kodak — Winnipeg</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"These guys are the most honest and helpful company I've ever dealt with. I was blown away by how great they were in explaining everything. Recommending them to all my family and friends!"</p>
+      <div class="review-author">Mike Johannson — Winnipeg · 1 month ago</div>
+    </div>
+  </div>
+</div>
+
+<!-- MID CTA -->
+<div class="mid-cta">
+  <h2>READY TO CALL?</h2>
+  <p>Same-day service available. Licensed and insured. Serving Winnipeg and surrounding areas.</p>
+  <a href="tel:+12048907725" class="lp-call-btn" style="max-width:400px;margin:0 auto">📞 (204) 890-7725</a>
+</div>
+
+<!-- ABOUT -->
+<div class="about-strip">
+  <div class="about-inner">
+    <h2>ABOUT ALOHA PLUMBING</h2>
+    <p>Aloha Plumbing & Drain Services Inc. is Winnipeg's trusted plumbing and drain specialist. Founded by Julian, we've built a team of named, highly-trained technicians — Brett, John, and Presley — who Winnipeg homeowners mention by name in their reviews.</p>
+    <p>We are a licensed sewer and water contractor in Winnipeg, Selkirk, and Brandon, MB. We specialize in drain cleaning, pipe relining, sewer repair, and emergency plumbing.</p>
+    <div class="cert-highlight">
+      <span class="cert-icon">🏆</span>
+      <div class="cert-text">
+        <h4>Canada's ONLY Double Master Certified Pipe Reliner</h4>
+        <p>This elite certification means no other company in Canada offers the same level of technical expertise and proven quality in CIPP trenchless pipe relining.</p>
+      </div>
+    </div>
+    <p>Located at Unit B – 40 Caithness Rd., Winnipeg, MB R3H 0V4. Call or text anytime: (204) 890-7725.</p>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <h2>DON'T WAIT — CALL NOW</h2>
+  <p>Plumbing problems don't fix themselves. Aloha is ready — same-day service, camera inspection, honest pricing.</p>
+  <a href="tel:+12048907725" class="lp-call-btn" style="max-width:460px;margin:0 auto;background:rgba(255,255,255,.15);border:3px solid rgba(255,255,255,.4)">📞 CALL (204) 890-7725</a>
+  <a href="tel:+12048907725" class="final-phone">(204) 890-7725</a>
+</div>
+
+<!-- FOOTER -->
+<div class="lp-footer">
+  <p>
+    Aloha Plumbing & Drain Services Inc.<br>
+    Unit B – 40 Caithness Rd., Winnipeg, MB R3H 0V4<br>
+    <a href="tel:+12048907725">(204) 890-7725</a> · <a href="http://www.alohawinnipeg.ca">alohawinnipeg.ca</a><br>
+    © 2025 Aloha Plumbing & Drain Services Inc. All rights reserved.<br>
+    <a href="index.html">Main website</a> · <a href="#">Privacy Policy</a>
+  </p>
+</div>
+
+</body>
+</html>

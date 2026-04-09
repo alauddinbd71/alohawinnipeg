@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aloha Plumbing & Drain Services — Winnipeg's #1 Emergency Plumber. Same-day service, free camera inspection, Canada's only double master certified pipe reliner. Call (204) 890-7725.">
+<title>Aloha Plumbing & Drain Services | Emergency Plumber Winnipeg | (204) 890-7725</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+<style>
+:root {
+  --red: #D93025;
+  --red-dark: #B71C1C;
+  --red-light: #FFEBEE;
+  --navy: #0D1B2A;
+  --navy-mid: #1B2D3F;
+  --blue: #1565C0;
+  --blue-light: #E3F2FD;
+  --gold: #F5A623;
+  --gold-light: #FFF8E1;
+  --white: #FFFFFF;
+  --off-white: #F8F6F2;
+  --gray-100: #F5F5F5;
+  --gray-200: #EEEEEE;
+  --gray-400: #BDBDBD;
+  --gray-600: #757575;
+  --gray-800: #424242;
+  --text: #1A1A1A;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-serif: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+  --radius: 4px;
+  --radius-lg: 12px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.10);
+  --shadow-lg: 0 12px 48px rgba(0,0,0,0.18);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);color:var(--text);background:var(--white);overflow-x:hidden;font-size:16px;line-height:1.6}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+
+/* STICKY MOBILE CALL BAR */
+.sticky-call{display:none;position:fixed;bottom:0;left:0;right:0;z-index:999;background:var(--red);padding:14px 20px;text-align:center}
+.sticky-call a{color:#fff;font-family:var(--font-display);font-size:22px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:10px}
+.sticky-call a span.ic{font-size:20px}
+@media(max-width:768px){.sticky-call{display:block}}
+
+/* TOP BAR */
+.topbar{background:var(--navy);color:#fff;font-size:13px;padding:8px 0}
+.topbar-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px}
+.topbar-left{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.topbar-left span{opacity:.8}
+.topbar-right a{color:var(--gold);font-weight:600;font-size:14px;letter-spacing:.3px}
+
+/* NAV */
+nav{background:var(--white);border-bottom:1px solid var(--gray-200);position:sticky;top:0;z-index:900;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+.nav-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-icon{width:44px;height:44px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:22px;flex-shrink:0}
+.logo-text{display:flex;flex-direction:column}
+.logo-name{font-family:var(--font-display);font-size:20px;letter-spacing:1px;color:var(--navy);line-height:1}
+.logo-sub{font-size:11px;color:var(--gray-600);letter-spacing:.5px}
+.nav-links{display:flex;align-items:center;gap:28px;list-style:none}
+.nav-links a{font-size:14px;font-weight:500;color:var(--gray-800);transition:color .2s}
+.nav-links a:hover{color:var(--red)}
+.nav-cta{background:var(--red);color:#fff!important;padding:10px 20px;border-radius:var(--radius);font-weight:600!important;font-size:14px!important;transition:background .2s!important}
+.nav-cta:hover{background:var(--red-dark)!important}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px}
+.hamburger span{width:24px;height:2px;background:var(--navy);border-radius:2px;transition:.3s}
+@media(max-width:900px){
+  .nav-links{display:none;position:absolute;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:20px 24px;gap:16px;border-bottom:1px solid var(--gray-200);box-shadow:0 8px 24px rgba(0,0,0,.1)}
+  .nav-links.open{display:flex}
+  .hamburger{display:flex}
+}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;position:relative;overflow:hidden;min-height:600px;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:linear-gradient(135deg, #0D1B2A 0%, #1B2D3F 50%, #0D1B2A 100%);opacity:1}
+.hero-pattern{position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(255,255,255,.015) 30px,rgba(255,255,255,.015) 60px)}
+.hero-accent{position:absolute;top:-60px;right:-60px;width:400px;height:400px;background:var(--red);opacity:.08;border-radius:50%}
+.hero-accent2{position:absolute;bottom:-80px;left:-40px;width:300px;height:300px;background:var(--gold);opacity:.05;border-radius:50%}
+.hero-inner{max-width:1200px;margin:0 auto;padding:80px 24px;position:relative;z-index:2;display:grid;grid-template-columns:1fr 400px;gap:60px;align-items:center}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);color:var(--gold);padding:6px 14px;border-radius:20px;font-size:12px;font-weight:500;letter-spacing:.5px;margin-bottom:20px;text-transform:uppercase}
+.hero-title{font-family:var(--font-display);font-size:clamp(52px,7vw,88px);line-height:.95;letter-spacing:1px;margin-bottom:20px}
+.hero-title .accent{color:var(--red);display:block}
+.hero-sub{font-size:17px;color:rgba(255,255,255,.75);line-height:1.6;margin-bottom:32px;max-width:520px;font-weight:300}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px}
+.btn-primary{background:var(--red);color:#fff;padding:16px 32px;border-radius:var(--radius);font-weight:600;font-size:16px;display:inline-flex;align-items:center;gap:10px;transition:all .2s;border:2px solid var(--red)}
+.btn-primary:hover{background:var(--red-dark);border-color:var(--red-dark);transform:translateY(-1px);box-shadow:0 6px 20px rgba(217,48,37,.4)}
+.btn-outline{background:transparent;color:#fff;padding:16px 32px;border-radius:var(--radius);font-weight:500;font-size:16px;display:inline-flex;align-items:center;gap:10px;border:2px solid rgba(255,255,255,.3);transition:all .2s}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.07)}
+.hero-trust{display:flex;gap:24px;flex-wrap:wrap}
+.trust-pill{display:flex;align-items:center;gap:7px;font-size:13px;color:rgba(255,255,255,.7)}
+.trust-pill .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;flex-shrink:0}
+.hero-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:28px;backdrop-filter:blur(10px)}
+.hero-card-title{font-family:var(--font-display);font-size:18px;letter-spacing:1px;color:var(--gold);margin-bottom:16px}
+.rating-big{font-size:48px;font-family:var(--font-display);color:#fff;letter-spacing:1px}
+.stars{color:var(--gold);font-size:20px;letter-spacing:2px;display:block;margin:4px 0}
+.rating-sub{font-size:13px;color:rgba(255,255,255,.6);margin-bottom:20px}
+.cert-badge{background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.25);border-radius:var(--radius);padding:12px;margin-bottom:12px}
+.cert-badge-title{font-size:12px;font-weight:600;color:var(--gold);letter-spacing:.5px;text-transform:uppercase}
+.cert-badge-text{font-size:13px;color:rgba(255,255,255,.8);margin-top:3px}
+.phone-display{font-family:var(--font-display);font-size:26px;letter-spacing:2px;color:#fff;margin-top:16px;display:block;text-align:center}
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;gap:40px}
+  .hero-card{max-width:400px}
+}
+@media(max-width:600px){.hero-inner{padding:60px 20px}}
+
+/* TRUST BAR */
+.trust-bar{background:var(--off-white);border-bottom:1px solid var(--gray-200);padding:18px 0}
+.trust-bar-inner{max-width:1200px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-around;align-items:center;gap:16px;flex-wrap:wrap}
+.trust-item{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:500;color:var(--gray-800)}
+.trust-item .ic{font-size:18px}
+.trust-item strong{color:var(--text)}
+.trust-divider{width:1px;height:30px;background:var(--gray-200)}
+@media(max-width:600px){.trust-divider{display:none}}
+
+/* SECTION BASICS */
+section{padding:80px 0}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.section-eyebrow{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:var(--red);margin-bottom:12px}
+.section-title{font-family:var(--font-serif);font-size:clamp(32px,4vw,48px);line-height:1.15;color:var(--navy);margin-bottom:16px}
+.section-sub{font-size:17px;color:var(--gray-600);max-width:600px;line-height:1.65;font-weight:300}
+.section-header{margin-bottom:48px}
+.section-header.center{text-align:center}
+.section-header.center .section-sub{margin:0 auto}
+
+/* SERVICES */
+.services-section{background:var(--white)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.service-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:28px;transition:all .25s;position:relative;overflow:hidden}
+.service-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.service-card:hover::before{transform:scaleX(1)}
+.service-card:hover{border-color:transparent;box-shadow:var(--shadow-lg);transform:translateY(-4px)}
+.service-icon{width:52px;height:52px;background:var(--red-light);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;font-size:26px;margin-bottom:16px}
+.service-card h3{font-family:var(--font-serif);font-size:20px;color:var(--navy);margin-bottom:8px}
+.service-card p{font-size:14px;color:var(--gray-600);line-height:1.6;margin-bottom:16px}
+.service-link{font-size:13px;font-weight:600;color:var(--red);display:inline-flex;align-items:center;gap:6px;transition:gap .2s}
+.service-card:hover .service-link{gap:10px}
+.service-emergency{background:var(--navy);color:#fff;border-color:var(--navy)}
+.service-emergency .service-icon{background:rgba(217,48,37,.2)}
+.service-emergency h3{color:#fff}
+.service-emergency p{color:rgba(255,255,255,.7)}
+.service-emergency .service-link{color:var(--gold)}
+.service-emergency::before{background:var(--gold)}
+@media(max-width:900px){.services-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.services-grid{grid-template-columns:1fr}}
+
+/* ABOUT / DIFFERENTIATORS */
+.about-section{background:var(--off-white)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img-block{position:relative}
+.about-img-placeholder{background:var(--gray-200);border-radius:var(--radius-lg);aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font-size:64px;color:var(--gray-400);position:relative;overflow:hidden}
+.about-img-placeholder::after{content:'Aloha Team Photo';font-size:14px;font-family:var(--font-body);color:var(--gray-600);position:absolute;bottom:16px;left:50%;transform:translateX(-50%);white-space:nowrap}
+.about-badge{position:absolute;bottom:-20px;right:-20px;background:var(--navy);color:#fff;border-radius:var(--radius-lg);padding:20px;text-align:center;box-shadow:var(--shadow-lg)}
+.about-badge-num{font-family:var(--font-display);font-size:36px;color:var(--gold);display:block;letter-spacing:1px}
+.about-badge-text{font-size:11px;color:rgba(255,255,255,.7);text-transform:uppercase;letter-spacing:.5px}
+.diff-list{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+.diff-item{display:flex;gap:14px;align-items:flex-start}
+.diff-num{width:32px;height:32px;background:var(--red);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:600;flex-shrink:0;margin-top:2px}
+.diff-item h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:3px}
+.diff-item p{font-size:14px;color:var(--gray-600);line-height:1.5}
+@media(max-width:768px){.about-grid{grid-template-columns:1fr;gap:40px}.about-badge{bottom:10px;right:10px}}
+
+/* SOCIAL PROOF / REVIEWS */
+.reviews-section{background:var(--navy);color:#fff}
+.reviews-section .section-title{color:#fff}
+.reviews-section .section-sub{color:rgba(255,255,255,.65)}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.review-card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius-lg);padding:24px;transition:all .2s}
+.review-card:hover{background:rgba(255,255,255,.08);transform:translateY(-2px)}
+.review-stars{color:var(--gold);font-size:14px;letter-spacing:2px;margin-bottom:12px}
+.review-text{font-size:14px;color:rgba(255,255,255,.8);line-height:1.65;margin-bottom:16px;font-style:italic;font-weight:300}
+.review-author{font-size:13px;font-weight:600;color:#fff}
+.review-date{font-size:12px;color:rgba(255,255,255,.4);margin-top:2px}
+.review-savings{display:inline-block;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);color:var(--gold);font-size:12px;padding:4px 10px;border-radius:20px;margin-bottom:12px;font-weight:500}
+@media(max-width:900px){.reviews-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.reviews-grid{grid-template-columns:1fr}}
+
+/* PIPE RELINING CTA SECTION */
+.relining-section{background:linear-gradient(135deg,var(--red-dark) 0%,var(--red) 100%);color:#fff;padding:70px 0;overflow:hidden;position:relative}
+.relining-section::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(45deg,transparent,transparent 30px,rgba(255,255,255,.02) 30px,rgba(255,255,255,.02) 60px)}
+.relining-inner{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px}
+.relining-inner h2{font-family:var(--font-display);font-size:clamp(36px,5vw,56px);letter-spacing:1px;line-height:1;margin-bottom:12px}
+.relining-inner p{font-size:17px;color:rgba(255,255,255,.85);max-width:520px;font-weight:300}
+.relining-box{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);border-radius:var(--radius-lg);padding:28px;text-align:center;white-space:nowrap}
+.relining-box-num{font-family:var(--font-display);font-size:52px;letter-spacing:2px;color:#fff;display:block}
+.relining-box-label{font-size:13px;color:rgba(255,255,255,.7);margin-top:4px}
+.relining-badges{display:flex;gap:10px;margin-top:20px;flex-wrap:wrap}
+.relining-badge{background:rgba(255,255,255,.15);color:#fff;padding:6px 14px;border-radius:20px;font-size:13px;font-weight:500}
+@media(max-width:768px){.relining-inner{grid-template-columns:1fr;text-align:center}.relining-badges{justify-content:center}.relining-box{display:none}}
+
+/* PROCESS */
+.process-section{background:var(--white)}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-top:48px;position:relative}
+.process-steps::before{content:'';position:absolute;top:28px;left:10%;right:10%;height:2px;background:var(--gray-200);z-index:0}
+.process-step{text-align:center;position:relative;z-index:1}
+.step-circle{width:56px;height:56px;background:var(--red);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:24px;color:#fff;margin:0 auto 16px;position:relative;z-index:1}
+.process-step h4{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.process-step p{font-size:13px;color:var(--gray-600);line-height:1.5}
+@media(max-width:700px){.process-steps{grid-template-columns:repeat(2,1fr)}.process-steps::before{display:none}}
+
+/* FAQ */
+.faq-section{background:var(--off-white)}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.faq-item{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.faq-q{padding:18px 20px;font-weight:600;font-size:15px;color:var(--navy);cursor:pointer;display:flex;justify-content:space-between;align-items:center;user-select:none}
+.faq-q::after{content:'+';font-size:22px;color:var(--red);font-weight:300;transition:transform .2s;flex-shrink:0;margin-left:12px}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.faq-item.open .faq-a{max-height:200px}
+.faq-a-inner{padding:0 20px 18px;font-size:14px;color:var(--gray-600);line-height:1.65;border-top:1px solid var(--gray-100)}
+@media(max-width:700px){.faq-grid{grid-template-columns:1fr}}
+
+/* SERVICE AREAS */
+.areas-section{background:var(--white)}
+.areas-grid{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+.area-pill{background:var(--navy);color:#fff;padding:10px 20px;border-radius:20px;font-size:14px;font-weight:500;transition:all .2s}
+.area-pill:hover{background:var(--red);transform:translateY(-2px)}
+
+/* FINAL CTA */
+.final-cta{background:var(--navy);color:#fff;text-align:center;padding:80px 0}
+.final-cta h2{font-family:var(--font-display);font-size:clamp(40px,6vw,72px);letter-spacing:1px;line-height:1;margin-bottom:16px}
+.final-cta h2 span{color:var(--red)}
+.final-cta p{font-size:18px;color:rgba(255,255,255,.7);margin-bottom:36px;font-weight:300}
+.cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-gold{background:var(--gold);color:var(--navy);padding:18px 36px;border-radius:var(--radius);font-weight:700;font-size:17px;display:inline-flex;align-items:center;gap:10px;transition:all .2s}
+.btn-gold:hover{background:#FFC107;transform:translateY(-2px);box-shadow:0 6px 24px rgba(245,166,35,.4)}
+.final-cta .btn-outline{padding:18px 36px;font-size:17px}
+.final-number{font-family:var(--font-display);font-size:clamp(32px,5vw,56px);letter-spacing:3px;color:var(--gold);display:block;margin-top:32px}
+
+/* FOOTER */
+footer{background:#080F17;color:#fff;padding:56px 0 24px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand h3{font-family:var(--font-display);font-size:22px;letter-spacing:1px;color:#fff;margin-bottom:8px}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.5);line-height:1.6;margin-bottom:16px}
+.footer-phone{font-family:var(--font-display);font-size:24px;color:var(--gold);letter-spacing:2px;display:block;margin-bottom:6px}
+.footer-addr{font-size:12px;color:rgba(255,255,255,.4);line-height:1.6}
+.footer-col h4{font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.4);margin-bottom:16px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:10px}
+.footer-col ul li a{font-size:13px;color:rgba(255,255,255,.65);transition:color .2s}
+.footer-col ul li a:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,.35)}
+.footer-bottom a{font-size:12px;color:rgba(255,255,255,.35);transition:color .2s}
+.footer-bottom a:hover{color:rgba(255,255,255,.7)}
+@media(max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:600px){.footer-grid{grid-template-columns:1fr}}
+
+/* EMERGENCY BANNER */
+.emergency-banner{background:var(--red);color:#fff;padding:12px 0;text-align:center}
+.emergency-banner p{font-size:14px;font-weight:500}
+.emergency-banner a{color:#fff;font-weight:700;text-decoration:underline}
+
+/* ANIMATIONS */
+@keyframes fadeUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+.animate-up{opacity:0;animation:fadeUp .6s ease forwards}
+.delay-1{animation-delay:.1s}
+.delay-2{animation-delay:.2s}
+.delay-3{animation-delay:.3s}
+.delay-4{animation-delay:.4s}
+
+/* UTIL */
+.text-red{color:var(--red)}
+.mt-8{margin-top:8px}
+.mt-16{margin-top:16px}
+.mt-32{margin-top:32px}
+.flex{display:flex}
+.gap-12{gap:12px}
+.items-center{align-items:center}
+</style>
+</head>
+<body>
+
+<!-- STICKY MOBILE CALL -->
+<div class="sticky-call">
+  <a href="tel:+12048907725">
+    <span class="ic">📞</span>
+    CALL NOW — (204) 890-7725
+  </a>
+</div>
+
+<!-- EMERGENCY BANNER -->
+<div class="emergency-banner">
+  <p>🚨 Sewer backup or plumbing emergency? <a href="tel:+12048907725">Call us NOW — (204) 890-7725</a> · Same-day service available</p>
+</div>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-left">
+      <span>📍 Serving Winnipeg, Selkirk, St. Andrews & surrounding areas</span>
+      <span>⭐ 4.9 Google Rating · 92 Reviews</span>
+    </div>
+    <div class="topbar-right">
+      <a href="tel:+12048907725">📞 (204) 890-7725</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <div class="logo">
+      <div class="logo-icon">🌺</div>
+      <div class="logo-text">
+        <span class="logo-name">ALOHA PLUMBING</span>
+        <span class="logo-sub">& Drain Services Inc.</span>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="emergency-plumber.html">Emergency</a></li>
+      <li><a href="drain-cleaning.html">Drain Cleaning</a></li>
+      <li><a href="pipe-relining.html">Pipe Relining</a></li>
+      <li><a href="sewer-repair.html">Sewer Repair</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="tel:+12048907725" class="nav-cta">📞 Call Now</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" onclick="toggleNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-pattern"></div>
+  <div class="hero-accent"></div>
+  <div class="hero-accent2"></div>
+  <div class="hero-inner container">
+    <div>
+      <div class="hero-badge animate-up">🌺 Winnipeg's Trusted Drain & Pipe Experts</div>
+      <h1 class="hero-title animate-up delay-1">
+        WINNIPEG'S
+        <span class="accent">EMERGENCY</span>
+        PLUMBER
+      </h1>
+      <p class="hero-sub animate-up delay-2">Sewer backup? Blocked drain? Burst pipe? We respond fast, fix it right, and show you proof with our live camera system. No surprises, fair flat pricing.</p>
+      <div class="hero-ctas animate-up delay-3">
+        <a href="tel:+12048907725" class="btn-primary">📞 Call (204) 890-7725</a>
+        <a href="camera-inspection.html" class="btn-outline">🎥 Free Camera Inspection</a>
+      </div>
+      <div class="hero-trust animate-up delay-4">
+        <div class="trust-pill"><span class="dot"></span>Same-day service</div>
+        <div class="trust-pill"><span class="dot"></span>Flat-rate pricing</div>
+        <div class="trust-pill"><span class="dot"></span>Licensed & insured</div>
+        <div class="trust-pill"><span class="dot"></span>No-dig pipe repair</div>
+      </div>
+    </div>
+    <div class="hero-card animate-up delay-2">
+      <div class="hero-card-title">TRUSTED BY WINNIPEG</div>
+      <div class="rating-big">4.9</div>
+      <span class="stars">★★★★★</span>
+      <div class="rating-sub">92 verified Google reviews</div>
+      <div class="cert-badge">
+        <div class="cert-badge-title">🏆 Elite Certification</div>
+        <div class="cert-badge-text">Canada's ONLY Double Master Certified Pipe Reliner</div>
+      </div>
+      <div class="cert-badge">
+        <div class="cert-badge-title">⚡ Response Time</div>
+        <div class="cert-badge-text">Often on-site within 1–2 hours</div>
+      </div>
+      <a href="tel:+12048907725" class="phone-display">(204) 890-7725</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-bar-inner">
+    <div class="trust-item"><span class="ic">⭐</span><div><strong>4.9/5 Stars</strong><br>92 Google Reviews</div></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="ic">🏅</span><div><strong>Double Master Certified</strong><br>Only in Canada</div></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="ic">⚡</span><div><strong>Same-Day Service</strong><br>Often within 1–2 hours</div></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="ic">📷</span><div><strong>Free Camera Inspection</strong><br>See your pipes live</div></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="ic">💰</span><div><strong>Flat-Rate Pricing</strong><br>No hidden fees ever</div></div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">What We Do</div>
+      <h2 class="section-title">Complete Drain & Plumbing Solutions</h2>
+      <p class="section-sub">From blocked kitchen drains to collapsed sewer lines, Aloha has the tools, training, and experience to fix it right — the first time.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card service-emergency">
+        <div class="service-icon">🚨</div>
+        <h3>Emergency Plumbing</h3>
+        <p>Sewer backup flooding your basement? Don't wait — every minute costs more. We respond fast, diagnose with live camera, and fix it.</p>
+        <a href="emergency-plumber.html" class="service-link">Get emergency help →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🔧</div>
+        <h3>Drain Cleaning</h3>
+        <p>Slow drain, root intrusion, or complete blockage — we clear it all using industry-leading equipment with camera proof you can see.</p>
+        <a href="drain-cleaning.html" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏆</div>
+        <h3>Pipe Relining (CIPP)</h3>
+        <p>Canada's only double master certified reliner. Restore your pipes without digging up your yard — saves you $9,000+ vs excavation.</p>
+        <a href="pipe-relining.html" class="service-link">See how it works →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🎥</div>
+        <h3>Camera Inspection</h3>
+        <p>See exactly what's in your pipes with our CCTV camera system. Free inspection — we show you live footage and honest options.</p>
+        <a href="camera-inspection.html" class="service-link">Book free inspection →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🌊</div>
+        <h3>Sewer Line Repair</h3>
+        <p>Got a cracked or collapsed sewer line? Get a second opinion from Aloha before spending $10,000+ on unnecessary excavation.</p>
+        <a href="sewer-repair.html" class="service-link">Learn more →</a>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">🏠</div>
+        <h3>Home Plumbing</h3>
+        <p>Kitchen sinks, hot water tanks, bathroom plumbing, leaking pipes, water softeners — full-service residential plumbing.</p>
+        <a href="plumbing-services.html" class="service-link">View all services →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PIPE RELINING CTA STRIP -->
+<div class="relining-section">
+  <div class="container">
+    <div class="relining-inner">
+      <div>
+        <h2>SKIP THE DIG.<br>SAVE THE MONEY.</h2>
+        <p>Another company quoted you $10,000+ to excavate your yard? Call Aloha first. As Canada's only Double Master Certified pipe reliner, we can restore your pipes from the inside — no digging, no mess, lasting 50+ years.</p>
+        <div class="relining-badges">
+          <span class="relining-badge">🏆 Only Certified in Canada</span>
+          <span class="relining-badge">⏱ Completed in 1 Day</span>
+          <span class="relining-badge">💰 Save $9,000+</span>
+          <span class="relining-badge">📅 50-Year Lifespan</span>
+        </div>
+        <div style="margin-top:24px">
+          <a href="pipe-relining.html" class="btn-primary" style="background:#fff;color:var(--red-dark)">Learn About Pipe Relining →</a>
+        </div>
+      </div>
+      <div class="relining-box">
+        <span class="relining-box-num">$13,000</span>
+        <div class="relining-box-label">Saved by one Aloha customer<br>vs competitor's excavation quote</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT / WHY ALOHA -->
+<section class="about-section">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-block">
+        <div class="about-img-placeholder">🌺</div>
+        <div class="about-badge">
+          <span class="about-badge-num">92</span>
+          <span class="about-badge-text">5-Star Reviews</span>
+        </div>
+      </div>
+      <div>
+        <div class="section-eyebrow">Why Aloha</div>
+        <h2 class="section-title">We Fix What Others Can't — And We Prove It</h2>
+        <p class="section-sub">When other plumbing companies give up or recommend the most expensive solution, Aloha digs deeper (without the actual digging).</p>
+        <div class="diff-list">
+          <div class="diff-item">
+            <div class="diff-num">1</div>
+            <div>
+              <h4>Canada's Only Double Master Certified Pipe Reliner</h4>
+              <p>This elite certification means advanced technical expertise and proven installation quality — no other company in Canada offers this level of pipe relining.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">2</div>
+            <div>
+              <h4>Live Camera — You Watch With Us</h4>
+              <p>We don't just tell you what's wrong. We show you on our CCTV camera in real time, then explain your options honestly — no pressure.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">3</div>
+            <div>
+              <h4>We Came Out 50 km Outside Winnipeg to Fix What No One Else Could</h4>
+              <p>True story from one of our clients. We go the extra mile — literally — because we genuinely care about fixing your home right.</p>
+            </div>
+          </div>
+          <div class="diff-item">
+            <div class="diff-num">4</div>
+            <div>
+              <h4>Flat-Rate Pricing — What We Quote Is What You Pay</h4>
+              <p>Multiple customers have noted that the price matched exactly what was listed. No surprise fees, no inflated emergency charges.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews-section">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-eyebrow" style="color:var(--gold)">Real Customers · Real Results</div>
+      <h2 class="section-title">What Winnipeg Is Saying</h2>
+      <p class="section-sub">92 five-star Google reviews — here's why our customers never call another plumber again.</p>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="review-savings">💰 Saved $9,000+</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"I was told by another company it needed relining and would cost over $9,000. Thanks to Aloha, they said there were no cracks or breaks that needed repair. They saved me over $9,000. Thanks for your honesty."</p>
+        <div class="review-author">Sherree Orvis</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-savings">💰 Saved $13,000</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Other companies advised we would have to dig up the basement and redo all plumbing for close to $13,000. Aloha saved us that amount. We are forever grateful and will be customers for life."</p>
+        <div class="review-author">Kelly Lauren</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-savings">⚡ Fixed in 1 Hour</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Brett was amazing and removed all the roots in my main sewer line within an hour! After multiple companies couldn't fix it, Aloha's customer service is absolutely incredible. I will only be using them!"</p>
+        <div class="review-author">Stefanie Mikac</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"These guys are the most honest and helpful company I've ever dealt with. I was blown away by how great they were in explaining everything. Recommending them to all my family and friends!"</p>
+        <div class="review-author">Mike Johannson</div>
+        <div class="review-date">1 month ago</div>
+      </div>
+      <div class="review-card">
+        <div class="review-savings">💰 Saved $2,000+</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Called Aloha and they fixed it for $180 in a half hour — no digging necessary. I paid $500 to Mr. Rooter who said we'd need to dig the ground for $2k+. Would avoid Mr. Rooter and call people who actually care."</p>
+        <div class="review-author">Jordan V.</div>
+        <div class="review-date">Google Review</div>
+      </div>
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"After two other companies came out and gave up on our issue, Brett stepped in and solved the problem. His knowledge, determination, and attention to detail made all the difference. Truly above and beyond."</p>
+        <div class="review-author">Victoria Markova</div>
+        <div class="review-date">6 months ago</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process-section">
+  <div class="container">
+    <div class="section-header center">
+      <div class="section-eyebrow">How It Works</div>
+      <h2 class="section-title">From Call to Fixed — Simple & Stress-Free</h2>
+    </div>
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-circle">1</div>
+        <h4>Call or Text</h4>
+        <p>Reach us anytime at (204) 890-7725. Friendly staff answers quickly and schedules your visit — often same day.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">2</div>
+        <h4>We Arrive Fast</h4>
+        <p>Our technician arrives on time, calls ahead, and comes prepared. Brett, Julian, John, or Presley — all experts.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">3</div>
+        <h4>Camera Diagnosis</h4>
+        <p>We insert our CCTV camera so you can see exactly what's happening. Honest diagnosis, clear options, no pressure.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-circle">4</div>
+        <h4>Fixed & Guaranteed</h4>
+        <p>We don't leave until it's flowing properly. You get camera proof it's clear. Flat-rate price — exactly as quoted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Common Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you charge extra for emergency calls?</div>
+        <div class="faq-a"><div class="faq-a-inner">We believe in transparent, flat-rate pricing. Our pricing is listed on our website and what we quote is what you pay — no surprise emergency surcharges or hidden fees.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What is pipe relining and will you dig up my yard?</div>
+        <div class="faq-a"><div class="faq-a-inner">CIPP pipe relining is a no-dig solution that creates a brand-new pipe inside your existing one. We insert a liner through small access points — no excavation, no torn-up lawn, no mess. The result lasts 50+ years.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How quickly can you come out?</div>
+        <div class="faq-a"><div class="faq-a-inner">Many customers report we arrive within 1–2 hours for emergency situations. Same-day service is our standard. We also offer scheduled appointments for non-emergency work the next day.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What is a free camera inspection?</div>
+        <div class="faq-a"><div class="faq-a-inner">We insert a CCTV camera into your sewer or drain line so you can watch live footage of what's happening inside your pipes. It's completely free and helps us give you an honest assessment before recommending any work.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Another company said I need to dig up my sewer — is that true?</div>
+        <div class="faq-a"><div class="faq-a-inner">Not always. Many customers come to us after getting expensive excavation quotes and we're able to reline or repair the pipe without any digging. We've saved customers $2,000–$13,000 over competitor quotes. Call us for a second opinion.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Do you serve areas outside Winnipeg?</div>
+        <div class="faq-a"><div class="faq-a-inner">Yes — we are a licensed sewer and water contractor in Winnipeg, Selkirk, and Brandon. We've also traveled 50+ km outside the city for jobs that other companies couldn't solve. Call us and we'll confirm your area.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What makes Aloha different from other plumbers?</div>
+        <div class="faq-a"><div class="faq-a-inner">We're Canada's only Double Master Certified pipe reliner. We use live camera inspection on every job. We're known for solving problems others couldn't fix, saving customers thousands, and charging exactly what we quote.</div></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Can I get a sewer inspection when buying a home?</div>
+        <div class="faq-a"><div class="faq-a-inner">Absolutely — this is one of our most popular services for homebuyers. We've done free sewer scopes on the day of possession to give buyers peace of mind before they sign. Ask about our pre-purchase inspection service.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREAS -->
+<section class="areas-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Service Areas</div>
+      <h2 class="section-title">Proudly Serving Winnipeg & Surrounding Communities</h2>
+      <p class="section-sub">Licensed sewer and water contractor in Winnipeg, Selkirk, and Brandon. We travel to solve problems others won't.</p>
+    </div>
+    <div class="areas-grid">
+      <a href="#" class="area-pill">Winnipeg</a>
+      <a href="#" class="area-pill">Selkirk</a>
+      <a href="#" class="area-pill">St. Andrews</a>
+      <a href="#" class="area-pill">Brandon</a>
+      <a href="#" class="area-pill">River Heights</a>
+      <a href="#" class="area-pill">Transcona</a>
+      <a href="#" class="area-pill">St. Vital</a>
+      <a href="#" class="area-pill">St. James</a>
+      <a href="#" class="area-pill">Charleswood</a>
+      <a href="#" class="area-pill">Fort Garry</a>
+      <a href="#" class="area-pill">Tuxedo</a>
+      <a href="#" class="area-pill">North Kildonan</a>
+      <a href="#" class="area-pill">East Kildonan</a>
+      <a href="#" class="area-pill">West End</a>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<div class="final-cta">
+  <div class="container">
+    <h2>DON'T WAIT.<br><span>CALL ALOHA.</span></h2>
+    <p>Winnipeg's most trusted drain and plumbing specialists — same-day service, camera proof, honest pricing.</p>
+    <div class="cta-group">
+      <a href="tel:+12048907725" class="btn-gold">📞 Call (204) 890-7725</a>
+      <a href="camera-inspection.html" class="btn-outline" style="color:#fff;padding:18px 36px;font-size:17px">🎥 Free Camera Inspection</a>
+    </div>
+    <a href="tel:+12048907725" class="final-number">(204) 890-7725</a>
+    <p style="margin-top:12px;font-size:14px;color:rgba(255,255,255,.4)">Call or Text · Same-Day Service Available · Licensed & Insured</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>🌺 ALOHA PLUMBING</h3>
+        <p>Winnipeg's trusted plumbing and drain specialists. Canada's only Double Master Certified pipe reliner. Serving Winnipeg, Selkirk, St. Andrews, and Brandon.</p>
+        <a href="tel:+12048907725" class="footer-phone">(204) 890-7725</a>
+        <div class="footer-addr">Unit B – 40 Caithness Rd.<br>Winnipeg, MB R3H 0V4<br>Call or Text Anytime</div>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="emergency-plumber.html">Emergency Plumbing</a></li>
+          <li><a href="drain-cleaning.html">Drain Cleaning</a></li>
+          <li><a href="pipe-relining.html">Pipe Relining</a></li>
+          <li><a href="sewer-repair.html">Sewer Repair</a></li>
+          <li><a href="camera-inspection.html">Camera Inspection</a></li>
+          <li><a href="plumbing-services.html">Home Plumbing</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Aloha</a></li>
+          <li><a href="buying-a-home.html">Buying a Home?</a></li>
+          <li><a href="areas-served.html">Areas Served</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Trust</h4>
+        <ul>
+          <li><a href="#">⭐ 4.9 Google Rating</a></li>
+          <li><a href="#">🏅 Double Master Certified</a></li>
+          <li><a href="#">📍 Licensed in 3 Cities</a></li>
+          <li><a href="#">💰 Flat-Rate Pricing</a></li>
+          <li><a href="#">🎥 Free Camera Inspect</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Aloha Plumbing & Drain Services Inc. All rights reserved.</p>
+      <div style="display:flex;gap:20px;">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open')}
+function toggleFaq(el){
+  const item=el.parentElement;
+  const wasOpen=item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+  if(!wasOpen)item.classList.add('open');
+}
+// Intersection observer for animations
+const obs=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='none'}});
+},{threshold:.1});
+document.querySelectorAll('.service-card,.review-card,.process-step,.diff-item').forEach(el=>{
+  el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity .5s ease, transform .5s ease';
+  obs.observe(el);
+});
+</script>
+</body>
+</html>
